@@ -1,3 +1,3 @@
 # HW
 
-Please don't just copy and past.
+Please don't just copy and paste.
