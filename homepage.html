@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+
+
+    <title>Leo Luo's Homepage</title>
+    <link rel="stylesheet" href="Home.css"/>
+    <link rel="stylesheet"
+          href="https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/element-ui@2.13.0/lib/index.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            color: #000000;
+        }
+
+        .map {
+            height: 100%;
+            width: 100%;
+            float: left;
+        }
+
+        .info-title {
+            font-weight: bolder;
+            color: #fff;
+            font-size: 14px;
+            line-height: 26px;
+            padding: 0 0 0 6px;
+            background: #0f619b
+        }
+
+        .info-content {
+            padding: 4px;
+            color: #000000;
+            line-height: 23px;
+            font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '.AppleSystemUIFont', Arial;
+        }
+
+        .info-content img {
+            float: left;
+            margin: 3px;
+        }
+
+        .amap-info-combo .keyword-input {
+            height: auto;
+        }
+
+        html, body, #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .custom-input-card {
+            width: 18rem;
+        }
+
+        .custom-input-card .btn:last-child {
+            margin-left: 1rem;
+        }
+
+        .content-window-card {
+            position: relative;
+            width: 23rem;
+            padding: 0.75rem 0 0 1.25rem;
+            box-shadow: none;
+            bottom: 0;
+            left: 0;
+        }
+
+        .content-window-card p {
+            height: 2rem;
+        }
+    </style>
+
+</head>
+
+<div id="header">
+    <ul>
+        <li class='nav'><a class="c0" href="#About Me">About Me</a></li>
+        <li class='nav'><a class="c0" href="#More">Gallery</a></li>
+        <li class='nav'><a class="c0" href="#Project">Project</a></li>
+
+    </ul>
+
+</div>
+
+<header>
+
+
+    <hgroup>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Leo Luo's Homepage</h1>
+    </hgroup>
+
+
+</header>
+
+<div class="row" id="About Me">
+    <div class="rightcolumn">
+        <div class="card">
+            <div class="h21">About Me</div>
+            <div align="center">
+                <img class="img" src="images/profile.jpg" alt="profile">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="p2">
+                <p2>Address: Jinan University</p2>
+                <p2>City: Guangzhou</p2>
+                <br/>
+                <p2>Country: China</p2>
+
+                <br/>
+                <p2>Postal: 510000</p2>
+                <br/>
+                <p2>Major: CST</p2>
+                <br/>
+                <p2>Phone:</p2>
+                <a class="c1" href="tel:+8623-4567">+8623-4567</a>
+                <br/>
+                <p2>Email:</p2>
+                <a class="c1" href="leoluo@gmail.com">leoluo@gmail.com</a>
+                <br/>
+                <p2>Twitter:</p2>
+                <a class="c1" href="@leo_luo_123">@leoluo_123</a>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="left">
+
+
+        <div class="article">
+            <h2 id="Project">Project</h2>
+
+            <br/>
+            <br/>
+            <table class="custom_tb" align="center">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Project 1</th>
+                    <th>Project 2</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Chapter 2</td>
+                    <td><a class="c3" href="Chapter2/Project1.html" target="content">Share Your travel photos</a></td>
+                    <td><a class="c3" href="Chapter2/Project2.html" target="content">Customer relations management</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chapter 3</td>
+                    <td><a class="c3" href="Chapter3/Project1/Project1.html" target="content">Share Your travel
+                        photos</a></td>
+                    <td><a class="c3" href="Chapter3/Project2/Project2.html" target="content">Customer relations
+                        Management</a></td>
+
+                </tr>
+                <tr>
+                    <td>Chapter 4</td>
+                    <td><a class="c3" href="Chapter4/Project1/Project1.html" target="content">Customer relations
+                        Management</a></td>
+                    <td><a class="c3" href="Chapter4/Project2/Project2.html" target="content">Art store</a></td>
+
+                </tr>
+                <tr>
+                    <td>Chapter 5</td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Chapter 6</td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Chapter 7</td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>Chapter 8</td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </table>
+            <div id="More">
+                <br/>
+                <br/>
+                <br/>
+                <h2>Gallery</h2>
+
+                <figure align="left">
+                    <img class="img_shadow" src="IMAGE/100.jpg" alt="Raytracing" title="Raytracing"/></a>
+                    <figcaption><em><br/>Render by LeoLuo</em></figcaption>
+                </figure>
+
+
+                <figure align="right">
+                    <img class="img_shadow" src="IMAGE/103.jpg" alt="Bunny" title="Bunny"/></a>
+                    <figcaption><em><br/>Stanford Bunny<br/>Render by LeoLuo</em></figcaption>
+                </figure>
+
+                <figure align="left">
+                    <img class="img_shadow" src="IMAGE/104.jpg" alt="Stanford Dragon" title="Stanford Dragon"/></a>
+                    <figcaption><em><br/>Stanford Dragon
+                        <br/>Render by LeoLuo</em></figcaption>
+                </figure>
+
+                <figure align="right">
+                    <img class="img_shadow" src="IMAGE/102.jpg" alt="Rasterization" title="Rasterization"/></a>
+                    <figcaption><em><br/>Rasterization by Leo Luo</em>
+                    </figcaption>
+                </figure>
+
+                <figure align="left">
+                    <img class="img_shadow" src="IMAGE/101.jpg" alt="Rasterization" title="Rasterization"/></a>
+                    <figcaption><em><br/>Rasterization by Leo Luo</em></figcaption>
+                </figure>
+
+            </div>
+
+
+            <div>
+                <p><span class="share"></span>Share:
+                    <img src="images/social/ins_16.png" alt="Share this to Instagram"/>
+                    <img src="images/social/facebook_16.png" alt="Share this on Twitter"/>
+                    <img src="images/social/twitter_16.png" alt="Share this on Facebook"/>
+                    <img src="images/social/email_16.png" alt="Email this to someone"/>
+                </p>
+            </div>
+            <div align="left">
+                <div class="vue-box" style="display: none;width:100%; height:100%" :style="'display: block;'">
+                    <el-container style="border: 3px solid #EBF4FF;">
+
+                        <el-main id="container" style="position:relative;width:970px; height:700px"></el-main>
+                    </el-container>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="https://webapi.amap.com/maps?v=1.4.15&key=836d14d2f72caacbb78e2bcc7de6331a&plugin=AMap.PlaceSearch,AMap.AdvancedInfoWindow"></script>
+        <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+        </head>
+
+        <div id="container" class="map"></div>
+
+        <script>
+            var app = new Vue({
+                el: '.vue-box',
+                data: {map: [],},
+                mounted: function () {
+                    var map = new AMap.Map('container', {
+                        zoom: 17,
+                        viewMode: '3D',
+                        resizeEnable: true,
+                        pinch: 45,
+                        isHotspot: true
+                    });
+                    var trafficLayer = new AMap.TileLayer.Traffic({
+                        zIndex: 10
+                    });
+                    map.add(trafficLayer);
+
+                    AMap.plugin(['AMap.ToolBar'], function () {
+                        var toolbar = new AMap.ToolBar();
+                        map.addControl(toolbar);
+                    });
+
+                    var placeSearch = new AMap.PlaceSearch();
+                    var infoWindow = new AMap.AdvancedInfoWindow({});
+                    map.on('hotspotover', function (result) {
+                        placeSearch.getDetails(result.id, function (status, result) {
+                            if (status === 'complete' && result.info === 'OK') {
+                                placeSearch_CallBack(result);
+                            }
+                        });
+                    });
+
+                    function placeSearch_CallBack(data) {
+                        var poiArr = data.poiList.pois;
+                        var location = poiArr[0].location;
+                        infoWindow.setContent(createContent(poiArr[0]));
+                        infoWindow.open(map, location);
+                    }
+
+                    function createContent(poi) {
+                        var s = [];
+                        s.push('<div class="info-title">' + poi.name + '</div><div class="info-content">' + "Address：" + poi.address);
+                        s.push("Phone Number：" + poi.tel);
+                        s.push("Type：" + poi.type);
+                        s.push('<div>');
+                        return s.join("<br>");
+                    }
+
+
+                }
+            })
+        </script>
+
+    </div>
+
+
+</div>
+</div>
+</div>
+
+<footer align="center">
+    <br/>
+    <p><a class="c2" href="#">Home</a> | <a class="c2" href="https://www.visitnorway.com">Browse</a> | <a
+            class="c2" href="https://www.google.com">Search</a></p>
+    <p><em>Copyright &copy; 2020 IAD Homepage</em></p>
+</footer>
+
+</html>
